@@ -1,0 +1,19 @@
+name: Feature request
+description: An idea for something Sundial could do.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. Please don't include Event titles, photos or anything else private.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Sundial to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How would it help you?
+      description: What you're trying to do, and how you manage today.

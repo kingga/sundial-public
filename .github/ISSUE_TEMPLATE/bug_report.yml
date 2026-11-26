@@ -1,0 +1,45 @@
+name: Bug report
+description: Something in Sundial doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. Please don't include Event titles, photos or anything else private; crop or blur screenshots if you add them. For anything private, email [contact.sundial.app@gmail.com](mailto:contact.sundial.app@gmail.com) instead.
+  - type: input
+    id: device
+    attributes:
+      label: Device and system version
+      placeholder: e.g. iPhone 16, iOS 26.1 or Pixel 9, Android 16
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Sundial version
+      description: Shown under About in Sundial.
+      placeholder: e.g. 1.0.0 (1)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Create an all-day Event that counts down
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+      description: Screenshots help, but leave out anything private.
+    validations:
+      required: true
